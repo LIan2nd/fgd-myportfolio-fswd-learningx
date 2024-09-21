@@ -1,8 +1,10 @@
 :root {
   --primary-color: #EB3678;
   --bg-color: #021526;
-  --bg-color-secondary: #041728;
-  --text-color-dark: #181C14;
+  --bg-color-secondary: #051829;
+  --bg-color-secondaryy: #405566;
+  --text-color-dark: #192940;
+  --text-color-darkk: #091930;
   --text-color-light: #fff;
   --fix-border-radius: 6px;
   --trans: ease-in-out;
@@ -16,6 +18,10 @@
   color: var(--text-color-light);
 }
 
+.my-alert {
+  background-color: var(--primary-color);
+}
+
 .my-bg-primary {
   background-color: var(--bg-color);
 }
@@ -27,6 +33,10 @@
   color: var(--primary-color);
   font-size: 1rem;
   text-decoration: none;
+}
+
+.my-btn span {
+  color: var(--text-color-light) !important;
 }
 
 .my-btn-secondary {
@@ -79,7 +89,7 @@ body {
 }
 
 h2 {
-  font-size: 2.3rem;
+  font-size: 4rem;
 }
 
 /* HEADER */
@@ -230,7 +240,7 @@ section#about h2:after {
 }
 
 .detail-about {
-  height: 280px;
+  height: 270px;
   border: 1px solid var(--primary-color);
   border-radius: var(--fix-border-radius);
   width: 100%;
@@ -326,10 +336,99 @@ section#project .cards-project .card-project>i {
 
 /* END PROJECT SECTION */
 
+/* CONTACT SECTION */
+
+section#contact {
+  padding-bottom: 0;
+}
+
+section#contact span {
+  color: var(--primary-color);
+}
+
+section#contact .contact {
+  display: flex;
+  gap: 100px;
+  margin-top: 50px;
+}
+
+section#contact .contact p {
+  line-height: 35px;
+  font-family: var(--font-serif);
+  margin-bottom: 40px;
+  font-size: 1.3rem;
+}
+
+section#contact h2:after {
+  content: "";
+  height: 3px;
+  display: block;
+  position: relative;
+  top: 8px;
+  width: 210px;
+  background-color: var(--primary-color);
+}
+
+section#contact .contact .contact-info {
+  flex-basis: 50%;
+}
+
+section#contact .contact .contact-form {
+  flex-basis: 50%;
+}
+
+section#contact .contact .contact-form>form .form-floating>.form-control {
+  background-color: var(--bg-color-secondaryy);
+  border: none;
+  color: var(--text-color-darkk);
+  border-radius: var(--fix-border-radius);
+}
+
+.form-floating>input+label:after,
+.form-floating>textarea+label:after {
+  background: transparent !important;
+}
+
+section#contact .contact .contact-form>form .form-floating>.form-control:focus {
+  border: 1px solid var(--primary-color);
+
+  outline: none !important;
+
+  outline-width: 0 !important;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+
+}
+
+section#contact .contact .contact-form>form .form-floating>label {
+  color: var(--text-color-dark);
+  font-size: 15px;
+}
+
+/* END CONTACT SECTION */
+
+/* FOOTER */
+
+footer {
+  color: var(--text-color-light);
+}
+
+footer ul li i {
+  color: var(--primary-color);
+  font-size: 1.2rem;
+}
+
+/* END FOOTER */
+
 
 /* MEDIA QUERY */
 /* TABLET */
 @media (max-width: 992px) {
+  h2 {
+    font-size: 3.8rem;
+  }
+
   section#home h2 {
     font-size: 6.5rem;
   }
@@ -350,10 +449,18 @@ section#project .cards-project .card-project>i {
   section#project .cards-project .card-project p {
     font-size: 1.1rem;
   }
+
+  section#contact .contact p {
+    font-size: 1.2rem;
+  }
 }
 
 /* LARGER SMARTPHONE */
 @media (max-width: 768px) {
+
+  h2 {
+    font-size: 3.6rem;
+  }
 
   .navbar ul li a {
     font-size: 1rem;
@@ -399,10 +506,22 @@ section#project .cards-project .card-project>i {
   section#project .cards-project .card-project p {
     font-size: 1rem;
   }
+
+  section#contact .contact {
+    flex-direction: column;
+  }
+
+  section#contact .contact p {
+    font-size: 1.1rem;
+  }
 }
 
 /* SMARTPHONE */
 @media (max-width: 576px) {
+
+  h2 {
+    font-size: 3.4rem;
+  }
 
   .my-btn {
     font-size: .8rem;
@@ -436,6 +555,10 @@ section#project .cards-project .card-project>i {
 
   section#project .cards-project .card-project p {
     font-size: .7rem;
+  }
+
+  section#contact .contact p {
+    font-size: 1rem;
   }
 }
 
