@@ -14,6 +14,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
   <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,10 +26,6 @@
     rel="stylesheet">
   <!-- Font Gowun Batang -->
   <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap" rel="stylesheet">
-
-  <!-- Font Awesome -->
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-
 
   <!-- Custrom -->
   <!-- Css -->
@@ -91,7 +89,7 @@
 
   <!-- About -->
   <section id="about">
-    <div class="container py-5">
+    <article class="container py-5">
       <div class="about d-flex gap-4">
         <img src="img/hero.png" alt="Alfian's Photo">
         <div class="about-me">
@@ -129,18 +127,88 @@
             </div>
           </div>
           <div class="d-flex gap-2">
-            <button class="my-btn my-btn-primary">Download CV</button>
-            <button class="my-btn my-btn-secondary">Learn More</button>
+            <a href="./file/myCv.pdf" class="my-btn my-btn-primary" download="Alfian's CV">Download CV</a>
+            <a href="https://github.com/LIan2nd" class="my-btn my-btn-secondary">Learn More</a>
           </div>
         </div>
       </div>
-    </div>
+    </article>
   </section>
   <!-- About End -->
 
   <!-- Project -->
   <section id="project">
-    <h2>Project</h2>
+    <div class="container">
+      <span>Overview</span>
+      <h2>Project</h2>
+
+      <div class="cards-project">
+        <a target="_blank" href="https://github.com/LIan2nd/uas-pemrograman-backend" class="card-project">
+          <i class="bi bi-bank"></i>
+          <div class="project-info">
+            <div>
+              <h3>HRD Restful API</h3>
+              <p>HRD Restful API ini adalah sebuah API yang Saya bangun
+                pada UAS Mata Kuliah Pemrograman Backend menggunakan Express
+                JS.</p>
+            </div>
+            <i class="bi bi-box-arrow-up-right"></i>
+          </div>
+        </a>
+        <a target="_blank" href="https://ur-covid.vercel.app/" class="card-project">
+          <i class="bi bi-virus2"></i>
+          <div class="project-info">
+            <div>
+              <h3>Ur Covid</h3>
+              <p>Ur Covid adalah website untuk memonitoring perkembangan covid,
+                yang saya bangun pada UAS mata kuliah Frontend menggunakan React.</p>
+            </div>
+            <i class="bi bi-box-arrow-up-right"></i>
+          </div>
+        </a>
+        <a target="_blank" href="https://l-movie.vercel.app/" class="card-project">
+          <i class="bi bi-film"></i>
+          <div class="project-info">
+            <div>
+              <h3>L Movie</h3>
+              <p>Ur Covid adalah website untuk mencari film dengan fetching API,
+                yang saya bangun pada UTS mata kuliah Frontend menggunakan React.</p>
+            </div>
+            <i class="bi bi-box-arrow-up-right"></i>
+          </div>
+        </a>
+        <div class="card-project comingsoon">
+          <i class="bi bi-gear"></i>
+          <div class="project-info">
+            <div>
+              <h3>Coming Soon</h3>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias deserunt voluptates, aperiam
+                distinctio esse blanditiis quam suscipit explicabo placeat eum?</p>
+            </div>
+          </div>
+        </div>
+        <div class="card-project comingsoon">
+          <i class="bi bi-gear"></i>
+          <div class="project-info">
+            <div>
+              <h3>Coming Soon</h3>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias deserunt voluptates, aperiam
+                distinctio esse blanditiis quam suscipit explicabo placeat eum?</p>
+            </div>
+          </div>
+        </div>
+        <div class="card-project comingsoon">
+          <i class="bi bi-gear"></i>
+          <div class="project-info">
+            <div>
+              <h3>Coming Soon</h3>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias deserunt voluptates, aperiam
+                distinctio esse blanditiis quam suscipit explicabo placeat eum?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
   <!-- End Project -->
 
@@ -152,7 +220,7 @@
 
   <!-- Footer -->
   <footer>
-
+    <a href="https://www.flaticon.com/free-icons/api" title="api icons">Api icons created by Freepik - Flaticon</a>
   </footer>
   <!-- Footer End -->
 </body>
