@@ -32,7 +32,12 @@
 <body>
   <!-- Navbar -->
   <header class="bg-transparent fixed-top">
-    <div class="container">
+    <div id="theme">
+      <button class="theme-toggle" id="themeToggle">
+        <i class="bi bi-sun-fill" id="themeIcon"></i>
+      </button>
+    </div>
+    <div class="container relative">
       <nav class="navbar navbar-expand-md navbar-light">
         <h1 class="title" href="#">Portfolio</h1>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -46,6 +51,9 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience">Experience</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#project">Project</a>
@@ -90,6 +98,9 @@
           <div>
             <span>Discover</span>
             <h2>About Me</h2>
+            <div id="skills-data">
+
+            </div>
           </div>
           <p>
             I am a student at Sekolah Tinggi Teknologi Terpadu Nurul Fikri, majoring in Informatics
@@ -110,19 +121,33 @@
             </div>
             <div class="row">
               <div class="col-4">
-                <p><span class="info">Status</span><br />Single</p>
+                <p><span class="info">Passion</span><br />Backend-Frontend</p>
               </div>
               <div class="col-4">
-                <p><span class="info">Instagram</span><br />@lforthissielu</p>
+                <p><span class="info">Status</span><br />Single</p>
               </div>
               <div class="col-4">
                 <p><span class="info">Phone</span><br />+62 851-6271-9191</p>
               </div>
             </div>
           </div>
-          <div class="d-flex gap-2">
-            <a href="./file/myResume.pdf" class="my-btn my-btn-primary" download="Alfian's Resume">Download Resume</a>
-            <a href="https://github.com/LIan2nd" class="my-btn my-btn-secondary">Learn More</a>
+          <div class="d-flex gap-2 flex-wrap" id="socials">
+            <a href="./file/myResume.pdf" class="my-btn my-btn-primary" download="Alfian's Resume">
+              <i class="bi bi-file-earmark-arrow-down"></i>
+              Resume
+            </a>
+            <a href="https://github.com/LIan2nd" class="my-btn my-btn-secondary">
+              <i class="bi bi-github"></i>&nbsp;
+              Github
+            </a>
+            <a target="_blank" href="https://instagram.com/lforthissielu/" class="my-btn my-btn-secondary">
+              <i class="bi bi-instagram"></i>&nbsp;
+              Instagram
+            </a>
+            <a target="_blank" href="https://linkedin.com/in/alfian-nur-usyaid/" class="my-btn my-btn-secondary">
+              <i class="bi bi-linkedin"></i>&nbsp;
+              Linkedin
+            </a>
           </div>
         </div>
       </div>
@@ -130,11 +155,57 @@
   </section>
   <!-- About End -->
 
+  <!-- Experience -->
+  <section id="experience">
+    <div class="container">
+      <span class="span">Follow my</span>
+      <h2>Experience</h2>
+      <div class="experience">
+        <div id="experience-toggle">
+          <span id="work-section" class="active">Work</span>
+          <span id="education-section">Education</span>
+        </div>
+        <div id="experience-data">
+          <ul id="work-data" class="experience-section">
+            <li class="position-relative">
+              <a href="https://www.flaticon.com/free-icons/sleep" target="_blank" class="text-sm" title="sleep icons">
+                <img src="./img/sleep.png" title="Sleepicons created by Corner Pixel - Flaticon" alt="Logo">
+              </a>
+              <div>
+                <p class="year text-secondary fs-6">2004 - Present</p>
+                <p class="fs-5">Still Studying...</p>
+              </div>
+            </li>
+          </ul>
+          <ul id="education-data" class="d-none experience-section">
+            <li>
+              <img src="./img/logo-ma.png" width="100" height="100" alt="Logo MA Sirojul Athfal 02">
+              <div>
+                <p class="year text-secondary fs-6">2019 - 2022</p>
+                <p class="fs-5">MA Sirojul Athfal 02</p>
+                <p class="position text-secondary fw-bold fs-6">IPS</p>
+              </div>
+            </li>
+            <li>
+              <img src="./img/sttnf.png" width="100" height="100" alt="Logo STT Terpadu Nurul Fikri">
+              <div>
+                <p class="year text-secondary fs-6">2022 - Present</p>
+                <p class="fs-5">STT Terpadu Nurul Fikri</p>
+                <p class="position text-secondary fw-bold fs-6">Teknik Informatika</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Experience End -->
+
   <!-- Project -->
   <section id="project">
     <div class="container">
       <span>Overview</span>
-      <h2>Project</h2>
+      <h2>Featured Projects</h2>
 
       <div class="cards-project">
         <a target="_blank" href="https://github.com/LIan2nd/uas-pemrograman-backend" class="card-project">
@@ -210,7 +281,7 @@
   <!-- Contact -->
   <section id="contact">
     <div class="container">
-      <span>get in touch with</span>
+      <span>Get in touch with</span>
       <h2>Contact</h2>
       <div class="contact">
         <div class="contact-info">
@@ -253,7 +324,7 @@
   <!-- Footer -->
   <footer class="container d-flex flex-wrap justify-content-between align-items-center py-3 mb-3 mt-5">
     <div class="col-md-4 d-flex align-items-center">
-      <span class="mb-3 mb-md-0">© 2024 LIand 🍵</span>
+      <span class="mb-3 mb-md-0">© 2025 LIand 🍵</span>
     </div>
 
     <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
