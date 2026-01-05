@@ -34,7 +34,7 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 
   // Skills Data
-  const skills = ['Bootstrap', 'TailwindCSS', 'Javascript', 'PHP', 'Python', 'ReactJs', 'ExpressJs', 'Laravel', 'Flask', 'MongoDB', 'MySQL', 'Postgres']
+  const skills = ['Next.js', 'Laravel', 'TypeScript', 'React', 'Flask', 'Prisma', 'TailwindCSS', 'PostgreSQL', 'Blockchain', 'Wagmi', 'Bootstrap', 'Git'];
   const skillBox = document.getElementById('skills-data');
   skills.forEach((skill) => {
     const skillTemp = `<small class="d-inline-flex px-3 py-2 fw-semibold
